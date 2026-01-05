@@ -14,7 +14,7 @@ const AppHeaderThemeToggler = () => {
 
     return (
         <CDropdown variant="nav-item" placement="bottom-end">
-            <CDropdownToggle caret={false} className="nav-link py-2 px-0">
+            <CDropdownToggle caret={false} className="nav-link py-2 px-2">
                 {colorMode === 'dark' ? (
                     <CIcon icon={cilMoon} size="lg" />
                 ) : colorMode === 'auto' ? (
