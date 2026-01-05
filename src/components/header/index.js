@@ -1,3 +1,4 @@
 import AppHeaderDropdown from './AppHeaderDropdown'
+import AppHeaderThemeToggler from './AppHeaderThemeToggler'
 
-export { AppHeaderDropdown }
+export { AppHeaderDropdown, AppHeaderThemeToggler }

@@ -10,7 +10,7 @@ import CIcon from '@coreui/icons-react'
 import { cilMenu } from '@coreui/icons'
 
 import { AppBreadcrumb } from './index'
-import { AppHeaderDropdown } from './header/index'
+import { AppHeaderDropdown, AppHeaderThemeToggler } from './header/index'
 
 const AppHeader = () => {
   const headerRef = useRef()
@@ -37,6 +37,10 @@ const AppHeader = () => {
           <CIcon icon={cilMenu} size="lg" />
         </CHeaderToggler>
         <CHeaderNav className="ms-auto">
+          <AppHeaderThemeToggler />
+          <li className="nav-item py-2 py-lg-1">
+            <div className="vr h-100 mx-2 text-body text-opacity-75"></div>
+          </li>
           <AppHeaderDropdown />
         </CHeaderNav>
       </CContainer>
